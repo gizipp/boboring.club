@@ -1,0 +1,25 @@
+---
+// src/pages/blog/index.astro
+import { reader } from '@keystatic/core';
+import Layout from '../../layouts/Layout.astro';
+
+const posts = await reader.collections.posts.all();
+---
+
+<Layout title="My Blog">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8">My Blog</h1>
+    <ul class="space-y-4">
+      {posts.map(post => (
+        <li>
+          <a href={`/blog/${post.slug}`} class="text-2xl text-blue-600 hover:underline">
+            {post.entry.title}
+          </a>
+          <p class="text-gray-600">
+            {new Date(post.entry.pubDate).toLocaleDateString()}
+          </p>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Layout>
