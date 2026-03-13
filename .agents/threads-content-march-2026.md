@@ -128,7 +128,7 @@ what's your morning routine hack? drop it below 👇
 #morningroutine #toddlerhacks #parentingtips #toddlermom
 
 ---
-DONE
+
 ### Minggu, 16 Maret • 20:30 WIB
 **Type:** Educational
 
@@ -181,7 +181,7 @@ welcome to the club 💛
 #lowstimulus #intentionalparenting #toddlerdevelopment #montessori
 
 ---
-
+belum
 ## MINGGU 2: EDUCATION + SOCIAL PROOF
 
 ### Senin, 17 Maret • 07:00 WIB
