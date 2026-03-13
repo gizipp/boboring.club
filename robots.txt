@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.boboring.club/sitemap.xml
+Sitemap: https://boboring.club/sitemap.xml
