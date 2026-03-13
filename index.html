@@ -51,136 +51,57 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="72725494-aedd-45b1-afd5-2970625de527"></script>
-    <style>
-        /* GLOBAL RESET & TYPOGRAPHY (LOWERCASE) */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: #333333; /* Dark Charcoal - Season 1 Theme */
-            color: #F5F5F5; /* Off-White */
-            font-family: 'Varela Round', 'Quicksand', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
 
-        /* CONTAINER */
-        .container {
-            max-width: 480px;
-            width: 100%;
-        }
-
-        /* LOGO AREA */
-        .logo {
-            font-size: 3.5rem;
-            font-weight: bold;
-            letter-spacing: -1px;
-            margin-bottom: 0.5rem;
-            color: #F5F5F5;
-        }
-        .logo span {
-            color: #C5B4E3; /* Soft Lavender Accent */
-        }
-        
-        .club-badge {
-            display: inline-block;
-            background: #1A1A1A;
-            color: #C5B4E3;
-            font-size: 0.8rem;
-            padding: 4px 12px;
-            border-radius: 20px;
-            border: 1px solid #333;
-            margin-bottom: 1rem;
-            letter-spacing: 1px;
-        }
-
-        /* TAGLINE */
-        .tagline {
-            font-size: 1.1rem;
-            color: #AAAAAA;
-            margin-bottom: 3rem;
-            line-height: 1.5;
-        }
-
-        /* BUTTONS */
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .btn {
-            display: block;
-            background-color: #1A1A1A; /* Soft Black */
-            color: #F5F5F5;
-            text-decoration: none;
-            padding: 18px;
-            border-radius: 16px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: 1px solid #444;
-            font-size: 1rem;
-        }
-
-        .btn:hover {
-            background-color: #C5B4E3; /* Lavender on Hover */
-            color: #333333; /* Dark Text on Hover */
-            border-color: #C5B4E3;
-            transform: translateY(-2px);
-        }
-
-        /* FOOTER */
-        .footer {
-            margin-top: 4rem;
-            font-size: 0.8rem;
-            color: #666;
-        }
-    </style>
-    
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-</head>
-<body>
 
-    <div class="container">
-        <div class="logo">
-            bobo<span>ring</span>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Varela Round", "Quicksand", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-[#333333] text-[#F5F5F5] font-sans flex flex-col items-center justify-center min-h-screen text-center p-5">
+
+    <div class="max-w-[480px] w-full">
+        <div class="text-[3.5rem] font-bold tracking-[-1px] mb-2 text-[#F5F5F5]">
+            bobo<span class="text-[#C5B4E3]">ring</span>
         </div>
         
-        <div class="club-badge">
+        <div class="inline-block bg-[#1A1A1A] text-[#C5B4E3] text-[0.8rem] py-1 px-3 rounded-full border border-[#333333] mb-4 tracking-[1px]">
             official club member
         </div>
         
-        <div class="tagline">
+        <div class="text-[1.1rem] text-[#AAAAAA] mb-12 leading-[1.5]">
             happy music. low stimulus. big emotions.<br>
             purposeful screen time for toddlers.
         </div>
 
-        <div class="btn-group">
-            <a href="https://www.youtube.com/@boboringclub" class="btn" target="_blank">
+        <div class="flex flex-col gap-[15px]">
+            <a href="https://www.youtube.com/@boboringclub" class="block bg-[#1A1A1A] text-[#F5F5F5] no-underline p-[18px] rounded-[16px] font-bold transition-all duration-300 ease-in-out border border-[#444444] text-[1rem] hover:bg-[#C5B4E3] hover:text-[#333333] hover:border-[#C5B4E3] hover:-translate-y-0.5" target="_blank">
                 ▶ watch on youtube
             </a>
 
-            <a href="https://linktr.ee/boboringclub" class="btn" target="_blank">
+            <a href="https://linktr.ee/boboringclub" class="block bg-[#1A1A1A] text-[#F5F5F5] no-underline p-[18px] rounded-[16px] font-bold transition-all duration-300 ease-in-out border border-[#444444] text-[1rem] hover:bg-[#C5B4E3] hover:text-[#333333] hover:border-[#C5B4E3] hover:-translate-y-0.5" target="_blank">
                 🎧 stream on music apps
             </a>
 
-            <a href="https://members.boboring.club" class="btn" target="_blank">
+            <a href="https://members.boboring.club" class="block bg-[#1A1A1A] text-[#F5F5F5] no-underline p-[18px] rounded-[16px] font-bold transition-all duration-300 ease-in-out border border-[#444444] text-[1rem] hover:bg-[#C5B4E3] hover:text-[#333333] hover:border-[#C5B4E3] hover:-translate-y-0.5" target="_blank">
                 ☁️ get free printables
             </a>
 
-            <a href="https://instagram.com/boboringclub" class="btn" target="_blank">
+            <a href="https://instagram.com/boboringclub" class="block bg-[#1A1A1A] text-[#F5F5F5] no-underline p-[18px] rounded-[16px] font-bold transition-all duration-300 ease-in-out border border-[#444444] text-[1rem] hover:bg-[#C5B4E3] hover:text-[#333333] hover:border-[#C5B4E3] hover:-translate-y-0.5" target="_blank">
                 📸 follow on instagram
             </a>
         </div>
 
-        <div class="footer">
+        <div class="mt-16 text-[0.8rem] text-[#666666]">
             &copy; 2026 boboring club - by <a href="https://gizipp.com" target="_blank"> gizipp studios</a>.<br>
             welcome to the club.
         </div>
